@@ -1,0 +1,310 @@
+@viewport{
+	      width: device-width;
+	      zoom: 1;
+}
+
+
+
+
+*{
+	/*Permet de redéfinir la méthode de calcul 
+	des largeurs et des hauteurs. Ici j'inclu dans
+	la taille des boites le padding et les bordures*/
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+/*...............Page Accueil..............*/
+
+/*...............Menu..............*/
+
+
+
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	background-color: #90c8f3;
+	color: #fff;
+	height: 80px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+
+.nav_link a{
+	color: #fff;
+	text-decoration: none;
+
+	transition: 0.2s linear;
+
+	display: inline-block;
+	padding: 22px 10px;
+}
+
+a.actif{
+	color: #ffc1b1;
+}
+
+.nav_link a:hover{
+	color: #ffc1b1;
+}
+
+
+.orange{
+	text-decoration: none;
+	color: #ffc1b1;
+}
+
+
+
+/*...............1ère partie..............*/
+
+
+.hero{
+	background: url("../img/sonia3.png") no-repeat center;
+	background-size: cover;
+	height:100vh;
+	min-height: 600px;
+	text-align: center;
+
+	margin-top: 80px; 
+
+}
+
+.hero_content{
+	          width: 70%;
+}
+
+
+.bg_hover{
+
+	background-color: rgba(0,0,0, 0.6);
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+h1, h2, h3, h4, h5{
+	 font-family: "Josefin Sans", sans-serif;
+	 color:#fff;
+	 text-transform: uppercase; /* lowercase; capitalize */
+	 font-weight: 400;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+p{
+	font-family: 'Poppins', 'Arial', cursive;
+	color: #fff;
+	font-size: 1rem;
+	margin:0;
+}
+
+
+.subheader{
+	font-size: 2.4rem;
+	color: #ffc1b1;
+	font-family: 'Nothing You Could Do', cursive;
+	
+}
+
+.store, .workout{
+	display: inline-block;
+	text-decoration: none;
+	color: #FFFFFF;
+
+	padding: 20px 100px;
+	border: 1px solid #ffc1b1;
+	
+	margin: 10px 25px;
+
+	transition: 0.3s linear;
+}
+
+.store{
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: transparent;
+
+	/*box-shadow: 6px 6px 10px yellow, -6px -6px 10px lightgreen;*/
+
+}
+
+.workout:hover{
+	color: #ffc1b1;
+	background-color: transparent;
+}
+
+.store:hover{
+	color: #fff;
+	background-color: #ffc1b1;
+	border-color: #ffc1b1;
+}
+
+
+
+
+/*..............2eme partie...............*/
+
+
+
+.intro{
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+}
+
+
+.intro_gauche{
+	      background: url("../img/sonia2.jpeg") no-repeat center;
+	      background-size: cover;
+	   }
+
+
+.intro_gauche, .intro_droite{
+	                          width: 50%;
+	                          min-width: 350px;
+	                          min-height: 300px;
+	                          flex: 1;
+}
+
+
+
+
+
+
+
+
+.intro_droite{
+	          background: url("../img/sonia.jpeg");
+              background-size: cover;
+              padding: 5%;
+ }
+
+
+ .intro_droite h3{
+ 	              font-size: 0,5rem
+ 	              padding-top: 40px;
+ 	              color: #fff;
+ }
+
+
+
+ 
+
+
+ .vd_back{
+ 	      width: 100%;
+ 	     /* min-height: 450px;*/
+
+ 	      position: relative;
+ }
+
+
+.vd_back_video{
+	                    width: 100%;
+	                    height: 100%;
+
+}
+
+
+ .vd_back video{
+ 	            width: 100%;
+ 	            display: block;
+ }
+
+
+.vd_back_content{
+	             position: absolute;
+                 top: 0;
+                 left:0;
+                 right: 0;
+                 bottom: 0;
+
+                 width: 100%;
+                 height: 100%;
+
+                 text-align: center;
+
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+                 align-items: center;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #90c8f3;
+    color: #fff;
+}
+
+
+
+
+/*..............Media Queries...............*/
+
+
+@media screen and (max-width: 568px){
+	             .navbar{
+	             	     flex-direction: column;
+	             }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	        .intro{
+	        	   flex-direction: column;	        
+	        	   
+            }
+
+            .intro_gauche , .intro_droite{
+            	                          width: 100%;
+            	                          min-height: 350px;	                        
+            }
+
+            .body{
+            	   width: 100%;
+            	   min-height: 350px;
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

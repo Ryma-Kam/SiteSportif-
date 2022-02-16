@@ -1,0 +1,110 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #90c8f3;
+    color: #fff;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5px;
+    align-items: center;
+}
+
+
+.nav_link a{
+    color: #fff;
+    text-decoration: none;
+
+    transition: 0.2s linear;
+
+    display: inline-block;
+    padding: 22px 10px;
+}
+
+a.actif{
+    color: #ffc1b1;
+}
+
+.nav_link a:hover{
+    color: #ffc1b1;
+}
+
+
+.orange{
+    text-decoration: none;
+    color: #ffc1b1;
+}
+
+
+
+
+
+    h1{
+        text-align: center;
+    }
+
+    #recette-liste{
+
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #recette1{
+        display:flex;
+        flex-direction: column;
+    }
+
+
+    .box-image{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    #recette2{
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    .box-image2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #recette3{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .box-image3{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #recette4{
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    .box-image4{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #90c8f3;
+    color: #fff;
+}
